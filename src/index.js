@@ -3,10 +3,23 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 ReactDOM.render(
   <React.StrictMode>
+      <Router>
     <App />
+          <ToastContainer />
+      </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

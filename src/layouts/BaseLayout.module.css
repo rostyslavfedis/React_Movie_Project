@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+.mainWrapper{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex:1;
+    background-color: yellow;
+    padding: 20px;
+    position: relative;
+    overflow-y: auto;
+
+}
+header{
+    background-color: red;
+}
+footer{
+    background-color: green;
+}
+header, footer{
+    padding: 10px 20px;
+}
